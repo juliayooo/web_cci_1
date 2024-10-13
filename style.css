@@ -1,17 +1,12 @@
-a{
-    font-family:'Times New Roman';
-    text-align: center;
-    color: white;
-    margin-top: 100px;
-    font-style: italic;
-    font-size: 30px;
-    padding: 50px;
-    align-items: center;
+@font-face {
+    font-family: Lusitana;
+    src: url('https://fonts.googleapis.com/css2?family=Lusitana:wght@400;700&display=swap');
 }
-h4{
-    font-family:'Times New Roman';
+
+a{
+    font-family:'Lusitana';
     text-align: center;
-    color: white;
+    color: blue;
     margin-top: 100px;
     font-style: italic;
     font-size: 30px;
@@ -21,7 +16,7 @@ h4{
 p{
     font-family:'Times New Roman';
     text-align: center;
-    color: white;
+    color: blue;
     margin-top: 100px;
     font-style: italic;
     font-size: 30px;
@@ -32,7 +27,7 @@ p{
     padding: 500px;
 }
 nav{
-    background-color: #BAB86C;
+    background-color: lightgray;
     padding: 50px;
 }
 h3{
@@ -45,7 +40,4 @@ h3{
 .nav_button{
 
     padding: 50px;
-}
-body{
-    background-image: url("grass.jpg");
 }
