@@ -16,15 +16,24 @@
                 position: absolute;
                 top: 50%;
                 left: 50%;
-                right: 50%;
-                /* transform: translate(-50%, -50%); */
-
-              
+                right: 50%; 
+                font-family: Lusitana;
+                font-style: italic;
+                text-decoration: underline;
+                font-size: 30px;
+                
+            }
+            .link{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                right: 50%;                 
             }
             .body_div{
                 position: relative;
                
             }
+
 
         </style>
 
@@ -33,25 +42,52 @@
 
     <body>
 
+        <!-- screen container -->
     <div class="body_div">
         <!-- the gif bg -->
         <img src="red_lady.gif" class="gif">
         <!-- the first word -->
-        <div class="text"><a class="firstword" href="https://juliayoo.com">hi</a></div>
+        <div class="text" id="text">hi</div>
+        <!-- <div class="link"><a class="word" id="word" href="https://juliayoo.com">hi</a></div> -->
+`  </div>
+
+
+<!-- all my hidden words -->
+<div hidden id="1">I</div>
+<div hidden id="2">can't</div>
+<div hidden id="3">help</div>
+<div hidden id="4">but</div>
+<div hidden id="5">keep</div>
+<div hidden id="6">running</div>
+
 
         <script>
+    let wordCount = 0;
+    window.onload = function(){   
+        wordCount= 0;
+    }
 
-
+    // Click event to change images sequentially
+    document.getElementById('text').onclick = function(){
+        if(wordCount < 6) {
+            wordCount++;
+            document.getElementById('text').innerHTML = document.getElementById(wordCount).innerHTML;
+        } else {
+            wordCount = 0;
+        }
+}
 
         </script>
 
 <!-- FIRST WRITE YOUR POEM< THEN PROMPT USER FOR A COUPLE WORDS 
  AND DISPLAY THEM ACROSS THE SCREEN
- REFERENCE ARAB LIT PROJECT -->
+ REFERENCE ARAB LIT PROJECT 
+ 
+ I cant help but 
+ keep running -->
 
 
-    </div>
-
+  
 
 
 
