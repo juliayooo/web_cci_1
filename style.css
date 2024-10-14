@@ -30,3 +30,32 @@ h3{
 
     padding: 50px;
 }
+    /* background red lady gif */
+    .gif{
+        width: 100%;
+    }
+    /* the first word "hi" */
+    .text{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        right: 50%; 
+        font-family: Lusitana;
+        font-style: italic;
+        text-decoration: underline;
+        font-size: 30px;
+        color: darkblue;
+
+        
+    }
+    .link_div{
+
+        position: absolute;
+        top: 50%;
+        left: 70%;
+        right: 30%;                 
+    }
+    .body_div{
+        position: relative;
+       
+    }
