@@ -6,6 +6,11 @@
       
         <title>hello</title>
         <style>
+        /* Lusitana font */
+        @font-face {
+            font-family: Lusitana;
+            src: url('https://fonts.googleapis.com/css2?family=Lusitana:wght@400;700&display=swap');
+        }
 
             /* background red lady gif */
             .gif{
@@ -23,11 +28,11 @@
                 font-size: 30px;
                 
             }
-            .link{
+            .link_div{
                 position: absolute;
                 top: 50%;
-                left: 50%;
-                right: 50%;                 
+                left: 70%;
+                right: 30%;                 
             }
             .body_div{
                 position: relative;
@@ -47,8 +52,8 @@
         <!-- the gif bg -->
         <img src="red_lady.gif" class="gif">
         <!-- the first word -->
-        <div class="text" id="text">hi</div>
-        <!-- <div class="link"><a class="word" id="word" href="https://juliayoo.com">hi</a></div> -->
+        <div class="text" id="text">click me</div>
+        <div class="link_div" id="link_div"><a class="word" id="word" href="">no, click me</a></div>
 `  </div>
 
 
@@ -57,8 +62,10 @@
 <div hidden id="2">can't</div>
 <div hidden id="3">help</div>
 <div hidden id="4">but</div>
-<div hidden id="5">keep</div>
-<div hidden id="6">running</div>
+<div hidden id="5">want</div>
+<div hidden id="6">to</div>
+<div hidden id="7">start</div>
+<div hidden id="8">over</div>
 
 
         <script>
@@ -69,9 +76,20 @@
 
     // Click event to change images sequentially
     document.getElementById('text').onclick = function(){
-        if(wordCount < 6) {
+        if(wordCount < 8) {
             wordCount++;
             document.getElementById('text').innerHTML = document.getElementById(wordCount).innerHTML;
+            // move the text randomly
+            var text_move = document.getElementById('text');
+            text_move.style.left = Math.floor(Math.random() * 80) + "%";
+            text_move.style.top = Math.floor(Math.random() * 80) + "%";
+
+            // move the href randomly as well
+            document.getElementById('word').innerHTML = document.getElementById(wordCount).innerHTML;
+            var link_div = document.getElementById('link_div');
+            link_div.style.left = Math.floor(Math.random() * 80) + "%";
+            link_div.style.top = Math.floor(Math.random() * 80) + "%";
+
         } else {
             wordCount = 0;
         }
