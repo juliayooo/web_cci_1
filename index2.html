@@ -6,38 +6,6 @@
       
         <title>hello</title>
         <style>
-        /* Lusitana font */
-        @font-face {
-            font-family: Lusitana;
-            src: url('https://fonts.googleapis.com/css2?family=Lusitana:wght@400;700&display=swap');
-        }
-
-            /* background red lady gif */
-            .gif{
-                width: 100%;
-            }
-            /* the first word "hi" */
-            .text{
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                right: 50%; 
-                font-family: Lusitana;
-                font-style: italic;
-                text-decoration: underline;
-                font-size: 30px;
-                
-            }
-            .link_div{
-                position: absolute;
-                top: 50%;
-                left: 70%;
-                right: 30%;                 
-            }
-            .body_div{
-                position: relative;
-               
-            }
 
 
         </style>
@@ -59,9 +27,9 @@
 
 <!-- all my hidden words -->
 <div hidden id="1">I</div>
-<div hidden id="2">can't</div>
-<div hidden id="3">help</div>
-<div hidden id="4">but</div>
+<div hidden id="2">really</div>
+<div hidden id="3">do</div>
+<div hidden id="4">not</div>
 <div hidden id="5">want</div>
 <div hidden id="6">to</div>
 <div hidden id="7">start</div>
@@ -74,7 +42,7 @@
         wordCount= 0;
     }
 
-    // Click event to change images sequentially
+    // Click event to change words sequentially
     document.getElementById('text').onclick = function(){
         if(wordCount < 8) {
             wordCount++;
@@ -93,23 +61,11 @@
         } else {
             wordCount = 0;
         }
+        
 }
 
         </script>
-
-<!-- FIRST WRITE YOUR POEM< THEN PROMPT USER FOR A COUPLE WORDS 
- AND DISPLAY THEM ACROSS THE SCREEN
- REFERENCE ARAB LIT PROJECT 
  
- I cant help but 
- keep running -->
-
-
-  
-
-
-
-    
     
     </body>
 </html>
