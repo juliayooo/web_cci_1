@@ -5,6 +5,11 @@
 }
 
 /* hyperlinks */
+.lusitana-regular {
+    font-family: "Lusitana", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
 a{
     font-family:'Lusitana';
     text-align: center;
